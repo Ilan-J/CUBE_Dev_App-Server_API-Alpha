@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "API_Wine": {
+    "Server_API": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

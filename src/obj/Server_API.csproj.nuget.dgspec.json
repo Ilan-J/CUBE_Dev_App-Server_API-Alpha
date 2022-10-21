@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\API_Wine.csproj": {}
+    "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\Server_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\API_Wine.csproj": {
+    "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\Server_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\API_Wine.csproj",
-        "projectName": "API_Wine",
-        "projectPath": "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\API_Wine.csproj",
+        "projectUniqueName": "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\Server_API.csproj",
+        "projectName": "Server_API",
+        "projectPath": "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\Server_API.csproj",
         "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Utilisateur\\source\\repos\\CUBE_Dev_App-Server_API\\src\\obj\\",
         "projectStyle": "PackageReference",
