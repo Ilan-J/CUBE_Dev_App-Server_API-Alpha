@@ -6,8 +6,8 @@ DELETE FROM `purchase_list`;
 DELETE FROM `supplier_command`;
 DELETE FROM `client_command`;
 
-DELETE FROM `supplier`;
-DELETE FROM `client`;
-
 DELETE FROM `product`;
 DELETE FROM `wine_family`;
+
+DELETE FROM `supplier`;
+DELETE FROM `client`;

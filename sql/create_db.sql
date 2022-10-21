@@ -29,39 +29,6 @@ CREATE TABLE IF NOT EXISTS `client` (
     PRIMARY KEY(`pk_client`)
 );
 
-CREATE TABLE IF NOT EXISTS `supplier_command` (
-    `pk_supplier_command` INT AUTO_INCREMENT,
-
-    `buying_date` TIMESTAMP NOT NULL,
-
-    `cost` DECIMAL NOT NULL,
-    `transport_cost` DECIMAL,
-
-    `fk_supplier` INT NOT NULL,
-
-    PRIMARY KEY(`pk_supplier_command`),
-    KEY `fk_supplier` (`fk_supplier`),
-    CONSTRAINT `supplier_command_ibfk_1` FOREIGN KEY(`fk_supplier`) REFERENCES `supplier` (`pk_supplier`)
-);
-CREATE TABLE IF NOT EXISTS `client_command` (
-    `pk_client_command` INT AUTO_INCREMENT,
-
-    `buying_date` TIMESTAMP NOT NULL,
-
-    `address` VARCHAR(255) NOT NULL,
-    `postal_code` VARCHAR(5) NOT NULL,
-    `town` VARCHAR(255) NOT NULL,
-
-    `cost` DECIMAL NOT NULL,
-    `transport_cost` DECIMAL,
-
-    `fk_client` INT NOT NULL,
-
-    PRIMARY KEY(`pk_client_command`),
-    KEY `fk_client` (`fk_client`),
-    CONSTRAINT `client_command_ibfk_1` FOREIGN KEY(`fk_client`) REFERENCES `client` (`pk_client`)
-);
-
 CREATE TABLE IF NOT EXISTS `wine_family` (
     `pk_wine_family` INT AUTO_INCREMENT,
 
@@ -93,6 +60,39 @@ CREATE TABLE IF NOT EXISTS `product` (
     KEY `fk_wine_family` (`fk_wine_family`),
     CONSTRAINT `product_ibfk_1` FOREIGN KEY(`fk_supplier`) REFERENCES `supplier` (`pk_supplier`),
     CONSTRAINT `product_ibfk_2` FOREIGN KEY(`fk_wine_family`) REFERENCES `wine_family` (`pk_wine_family`)
+);
+
+CREATE TABLE IF NOT EXISTS `supplier_command` (
+    `pk_supplier_command` INT AUTO_INCREMENT,
+
+    `buying_date` TIMESTAMP NOT NULL,
+
+    `cost` DECIMAL NOT NULL,
+    `transport_cost` DECIMAL,
+
+    `fk_supplier` INT NOT NULL,
+
+    PRIMARY KEY(`pk_supplier_command`),
+    KEY `fk_supplier` (`fk_supplier`),
+    CONSTRAINT `supplier_command_ibfk_1` FOREIGN KEY(`fk_supplier`) REFERENCES `supplier` (`pk_supplier`)
+);
+CREATE TABLE IF NOT EXISTS `client_command` (
+    `pk_client_command` INT AUTO_INCREMENT,
+
+    `buying_date` TIMESTAMP NOT NULL,
+
+    `address` VARCHAR(255) NOT NULL,
+    `postal_code` VARCHAR(5) NOT NULL,
+    `town` VARCHAR(255) NOT NULL,
+
+    `cost` DECIMAL NOT NULL,
+    `transport_cost` DECIMAL,
+
+    `fk_client` INT NOT NULL,
+
+    PRIMARY KEY(`pk_client_command`),
+    KEY `fk_client` (`fk_client`),
+    CONSTRAINT `client_command_ibfk_1` FOREIGN KEY(`fk_client`) REFERENCES `client` (`pk_client`)
 );
 
 CREATE TABLE IF NOT EXISTS `supply_list` (
