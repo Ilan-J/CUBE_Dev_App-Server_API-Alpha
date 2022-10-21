@@ -15,7 +15,7 @@ namespace Tutorial.SqlConn
         {
             try
             {
-                using StreamReader r = new StreamReader("../dbconfig.json");
+                using StreamReader r = new StreamReader("./dbconfig.json");
                 string config = r.ReadToEnd();
 
                 DBConfig? dbConfig = JsonConvert.DeserializeObject<DBConfig>(config);
