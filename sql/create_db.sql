@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS `test_grossiste_vin`;
-USE `test_grossiste_vin`;
+CREATE DATABASE IF NOT EXISTS `db_negosud`;
+USE `db_negosud`;
 
 CREATE TABLE IF NOT EXISTS `supplier` (
     `pk_supplier` INT AUTO_INCREMENT,

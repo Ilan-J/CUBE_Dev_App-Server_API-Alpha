@@ -1,4 +1,4 @@
-USE `test_grossiste_vin`;
+USE `db_negosud`;
 
 INSERT INTO `supplier` (
     `name`,
