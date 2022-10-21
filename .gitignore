@@ -4,6 +4,7 @@
 bin
 Debug
 Release
+Properties
 
 // Files
 dbconfig.json
