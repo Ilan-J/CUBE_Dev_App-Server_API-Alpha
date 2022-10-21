@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qCLKnEHnOeQTOdG3oOfkWRTJCbuEq9OXezk8BsXlKH4=",
+  "Source": "API_Wine",
+  "BasePath": "_content/API_Wine",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
