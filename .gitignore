@@ -6,4 +6,4 @@ Debug
 Release
 
 // Files
-./dbconfig.json
+dbconfig.json
