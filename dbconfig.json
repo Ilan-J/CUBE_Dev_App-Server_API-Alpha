@@ -3,5 +3,6 @@
   "port": 3306,
   "database": "wine_database",
   "username": "root",
-  "password": "root"
+  "password": "root",
+  "Coucou": "hihi"
 }
