@@ -10,8 +10,7 @@ namespace Tutorial.SqlConn
     class DBMySQLUtils
     {
 
-        public static MySqlConnection
-        GetDBConnection(string host, int port, string database, string username, string password)
+        public static MySqlConnection GetDBConnection(string? host, int? port, string? database, string? username, string? password)
         {
             // Connection String.
             String connString = "Server=" + host + ";Database=" + database
