@@ -31,7 +31,7 @@ namespace Server_API.DBConnection
                         GetDBConnection(null, null, null, null, null);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Fichier \"dbconfig.json\" introuvable.");

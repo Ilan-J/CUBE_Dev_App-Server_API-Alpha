@@ -7,6 +7,7 @@ using System.Data.Common;
 using System.Data;
 using MySql.Data.MySqlClient;
 using Server_API.DBConnection;
+using Server_API.DBQuery;
 
 namespace CsMySQLTutorial
 {
@@ -14,14 +15,17 @@ namespace CsMySQLTutorial
     {
         static void Main(string[] args)
         {
-            // Obtenez de l'objet Connection qui se connecte à DB.
-
-            MySqlConnection conn = DBUtils.GetDBConnection();
-            if (!DBUtils.TryDBConnection(conn))
+            try
             {
-                Console.Read();
-                return;
+                QueryClient.Select();
             }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e);
+                Console.WriteLine(e.StackTrace);
+            }
+
+            /*
 
             try
             {
@@ -41,6 +45,7 @@ namespace CsMySQLTutorial
 
 
             Console.Read();
+            */
 
         }
     }
