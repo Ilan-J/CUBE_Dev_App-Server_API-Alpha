@@ -1,47 +1,25 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Common;
-using System.Data;
-using MySql.Data.MySqlClient;
-using Server_API.DBConnection;
+var builder = WebApplication.CreateBuilder(args);
 
-namespace CsMySQLTutorial
+// Add services to the container.
+
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Obtenez de l'objet Connection qui se connecte à DB.
-
-            MySqlConnection conn = DBUtils.GetDBConnection();
-            if (!DBUtils.TryDBConnection(conn))
-            {
-                Console.Read();
-                return;
-            }
-
-            try
-            {
-                Console.WriteLine("Connexion à la base de données réussie.");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error: " + e);
-                Console.WriteLine(e.StackTrace);
-            }
-            finally
-            {
-                conn.Close();
-                conn.Dispose();
-                conn = null;
-            }
-
-
-            Console.Read();
-
-        }
-    }
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

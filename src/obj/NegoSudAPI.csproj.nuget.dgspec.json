@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\33672\\Source\\Repos\\Ilan-J\\CUBE_Dev_App-Server_API\\src\\Server_API.csproj": {}
+    "C:\\Users\\33672\\source\\repos\\NegoSud\\NegoSudAPI\\NegoSudAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\33672\\Source\\Repos\\Ilan-J\\CUBE_Dev_App-Server_API\\src\\Server_API.csproj": {
+    "C:\\Users\\33672\\source\\repos\\NegoSud\\NegoSudAPI\\NegoSudAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\33672\\Source\\Repos\\Ilan-J\\CUBE_Dev_App-Server_API\\src\\Server_API.csproj",
-        "projectName": "Server_API",
-        "projectPath": "C:\\Users\\33672\\Source\\Repos\\Ilan-J\\CUBE_Dev_App-Server_API\\src\\Server_API.csproj",
+        "projectUniqueName": "C:\\Users\\33672\\source\\repos\\NegoSud\\NegoSudAPI\\NegoSudAPI.csproj",
+        "projectName": "NegoSudAPI",
+        "projectPath": "C:\\Users\\33672\\source\\repos\\NegoSud\\NegoSudAPI\\NegoSudAPI.csproj",
         "packagesPath": "C:\\Users\\33672\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\33672\\Source\\Repos\\Ilan-J\\CUBE_Dev_App-Server_API\\src\\obj\\",
+        "outputPath": "C:\\Users\\33672\\source\\repos\\NegoSud\\NegoSudAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,14 +45,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.31, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
