@@ -1,13 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
-using static Org.BouncyCastle.Math.EC.ECCurve;
 
-namespace Server_API.DBConnection
+namespace APIServer.DBConnection
 {
     class DBUtils
     {
